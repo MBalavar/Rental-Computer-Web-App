@@ -1,0 +1,297 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>UCR Services</title>
+    <!-- meta tag -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!--Bootstrap CSS  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!--Bootstrap Bundles  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!--External CSS file  -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!--jQuery CDN link-->
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.js"integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script
+  
+  ></script>
+</head>
+
+<body>
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">UCR</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        
+                       
+                        <li class="nav-item">
+                            <a class="nav-link" href="./rental.html">Rent</a>
+                        </li>
+                        <li class="nav-item" style="display:none" id="masterPage" >
+                            <a class="nav-link"  href="./MasterlistPage.html"   >Masterlistpage</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#regiModal">Registration</a>
+                        </li>
+                    </ul>
+                    
+               
+                    <div class="flex-container" >
+                        <setion class="login-wrapper">
+
+
+                            <form   class="logedIn"  id="login" method="post" onsubmit="hideshow() ; return false;" >
+
+                                <label for="username"  >User Name</label>
+                                <input required name="username" id="username" type="text" autocapitalize="off" autocorrect="off" />
+
+                                <label for="password" >Password</label>
+                                <input class="password" required name="login-password" type="password" />
+                                
+                            
+                                <button type="submit" >Sign In</button>
+                            </form>
+                     <form id="logout" method="post" onsubmit="hideshow(); return false;" style="display:none">
+                        <button type="submit" >Sign Out</button>
+                    
+                    </form>
+                            </section>
+                    
+                    <form style="text-align: center; " action="">
+                       
+                        <input type="text" placeholder="Search...">        	
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <div class="p-5 text-center bg-image header-background rounded-3"
+             style="background-image: url('./img/homebg.png'); opacity: 1; background-repeat: no-repeat; background-size: 100% 100%; ">
+
+            <div class="d-flex justify-content-center align-items-center h-100">
+
+                <div class="transbox">
+
+                    <h2>Welcome to UTAS Computer Rental Services! </h2>
+                    <p>
+                        UTAS Computer Rental Services (UCR) provides computer rental service to staff and students in Hobart and
+                        Launceston at University of Tasmania.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        </div>
+
+        <div class="container main_body">
+            <br>
+
+            <div>
+                <h4>UTAS Computer Rental Services</h4>
+                <p>
+                    Established in 2018, UTAS Computer Rental Services is targeting to fufill students and stuff's temperory needs for electronic devices.
+                </p>
+                <br>
+
+                <h4>Why rent electronic devices  from UCR?</h4>
+                <p>
+                    UTAS Computer Rental Service offers a full range of high quality and performance devices with very affordable price.
+                    <ul>
+                        <li>Apple Macbooks</li>
+                        <li>Dell laptops</li>
+                        <li>Apple Tablets</li>
+                        <li>Epson Printers</li>
+                        <li>logitech keyboards</li>
+                    </ul>
+                    We offer 10% discount for stuff and 5% discount for students.
+                </p>
+                <br>
+
+                <h4>How long can I rent?</h4>
+                <p>
+                    You can rent the device from 1 hour up to 10 hours maximum (30 minutes interval).<br> You must return
+                    the computer within the rental time otherwise the penalty applied.
+                </p>
+                <br>
+                <h4>How to rent electonic devices?</h4>
+                <div>
+                    <ol>
+
+                        <li>
+                            Register
+                            <p>
+                                The services purely based on online services, any UTAS staff or student must register to the system first by
+                                providing name, e-mail address, mobile phone number and password. All of information in the registration is
+                                mandatory.
+                            </p>
+                        </li>
+
+
+                        <li>
+                            Deposit
+                            <p>
+                                By registering to the system, you will have an account set-up with a balance of 0 dollar.
+                                <br>You must deposit funds into the account to rent a computer or any other devices like printer, portable keyboard, etc.<br>
+                                Payment for the rental service will come from a pre-paid account. Depositing fund to an account is similar to
+                                the CAPS printing system.
+                            </p>
+                        </li>
+                        <li>
+                            Rent & Return
+                            <p>
+                                You can rent your device now.Don't forget to return it before time expired.
+                            </p>
+                        </li>
+                    </ol>
+                </div>
+
+            </div>
+
+             <!-- START THE FEATURETTES -->
+
+             <hr class="featurette-divider">
+
+             <div class="row featurette">
+                 <div class="col-md-7">
+                     <h2 class="featurette-heading">High Performance <span class="text-muted"> Laptops.</span></h2>
+                     <p class="lead">Whether you are Studying, Designing, Gaming or simply just surfing in internet, UCR offers a full range of high build quality, excellent performance, high reliable laptops for you to choose. </p>
+                 </div>
+                 <div class="col-md-5">
+                     <img class="img-responsive" src="./img/laptop2.jpg" alt="laptop picture">
+                 </div>
+             </div>
+ 
+             <hr class="featurette-divider">
+ 
+             <div class="row featurette">
+                 <div class="col-md-7 order-md-2">
+                     <h2 class="featurette-heading"> Enjoy Newest <span class="text-muted"> Tablets.</span></h2>
+                     <p class="lead">Do you want to order from the university computer services.</p>
+                 </div>
+                 <div class="col-md-5 order-md-1">
+                     <img class="img-responsive" src="./img/tablet2.jpg" alt="">
+ 
+                 </div>
+             </div>
+ 
+             <hr class="featurette-divider">
+ 
+             <div class="row featurette">
+                 <div class="col-md-7">
+                     <h2 class="featurette-heading">Most Reliable <span class="text-muted"> Printers. </span></h2>
+                     <p class="lead">Our reliable, updated, high functional printers will make your work and study much easier.</p>
+                 </div>
+                 <div class="col-md-5">
+                     <img class="img-responsive" src="./img/printer2.jpg" alt="">
+ 
+                 </div>
+             </div>
+ 
+             <hr class="featurette-divider">
+        </div>
+        <!-- /.container -->
+        <!-- registration modal -->
+        <!-- The Modal -->
+        <div class="modal fade" id="regiModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Registration</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <form class="form" onsubmit=rego(); return false;>
+                            <div class="form-group">
+                                <label for="first_name" class="form-label">First Name</label>
+                                <input type="text" class="form-control" id="first_name" name="first_name"
+                                       oninvalid="this.setCustomValidity('Enter your name here')" oninput="this.setCustomValidity('')" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="studentNo" class="form-label">Student/Staff number</label>
+                                <input type="number" class="form-control" id="studentNo" name="studentNo"
+                                       oninvalid="this.setCustomValidity('Enter your student/staff number here')" oninput="this.setCustomValidity('')" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" name="email"
+                                       oninvalid="this.setCustomValidity('Enter your email here')" oninput="this.setCustomValidity('')" required>
+
+                            </div>
+                            <div class="form-group">
+                                <label for="Password" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="Password" name="Password" pattern="(?=.*\d)(?=.*[A-Za-z]).{6,12}" title="Password"
+                                       oninvalid="this.setCustomValidity('Enter valid password(6-12 characters with at least one upper and lower case character)')" oninput="this.setCustomValidity('')" required>
+
+                            </div>
+                            <div class="form-group">
+                                <label for="confirm_password" class="form-label">Confirm Password</label>
+                                <input type="password" class="form-control" id="confirm_password" name="confirm_password" required>
+
+                            </div>
+
+                            <label>Gender:</label>
+                            <div class="form-check">
+
+                                <input type="radio" class="form-check-input" id="female" name="female" value="female">
+                                <label class="form-check-label" for="female">Female</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" id="male" name="male" value="male">
+                                <label class="form-check-label" for="male">Male</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" id="other" name="other" value="other">
+                                <label class="form-check-label" for="other">Other</label>
+                            </div>
+                        
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-primary float-right"> Submit </button>
+
+                        </form>
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+
+</body>
+<footer class="container">
+    <p class="float-end"><a href="#">Back to top</a></p>
+    <p>&copy; 2022 UCR services, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+
+</footer>
+</main>
+
+</html>
